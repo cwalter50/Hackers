@@ -3,29 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712CE4255DA06298A0DA7B02 /* Pods_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F99E172B7EABB25E871479 /* Pods_Hackers.framework */; };
 		8321004C241083C0005CFE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321004B241083C0005CFE29 /* AppDelegate.swift */; };
 		8321004E241083C0005CFE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321004D241083C0005CFE29 /* SceneDelegate.swift */; };
-		83210050241083C0005CFE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321004F241083C0005CFE29 /* ViewController.swift */; };
 		83210053241083C1005CFE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83210051241083C1005CFE29 /* Main.storyboard */; };
 		83210056241083C1005CFE29 /* Hackers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83210054241083C1005CFE29 /* Hackers.xcdatamodeld */; };
 		83210058241083C1005CFE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83210057241083C1005CFE29 /* Assets.xcassets */; };
 		8321005B241083C1005CFE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83210059241083C1005CFE29 /* LaunchScreen.storyboard */; };
+		83210063241084EF005CFE29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83210062241084EF005CFE29 /* GoogleService-Info.plist */; };
+		8321006524108DCE005CFE29 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006424108DCE005CFE29 /* MainVC.swift */; };
+		8321006B241099CC005CFE29 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006A241099CC005CFE29 /* NameVC.swift */; };
+		8321006D24109D47005CFE29 /* WaitingRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006C24109D47005CFE29 /* WaitingRoomVC.swift */; };
+		8321006F24109DA8005CFE29 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006E24109DA8005CFE29 /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030974A53C089D68FF65BBDE /* Pods-Hackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackers.debug.xcconfig"; path = "Target Support Files/Pods-Hackers/Pods-Hackers.debug.xcconfig"; sourceTree = "<group>"; };
+		710344B5F4E79774A51D2A5F /* Pods-Hackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackers.release.xcconfig"; path = "Target Support Files/Pods-Hackers/Pods-Hackers.release.xcconfig"; sourceTree = "<group>"; };
 		83210048241083C0005CFE29 /* Hackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8321004B241083C0005CFE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8321004D241083C0005CFE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8321004F241083C0005CFE29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83210052241083C1005CFE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83210055241083C1005CFE29 /* Hackers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hackers.xcdatamodel; sourceTree = "<group>"; };
 		83210057241083C1005CFE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8321005A241083C1005CFE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8321005C241083C1005CFE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83210062241084EF005CFE29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8321006424108DCE005CFE29 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8321006A241099CC005CFE29 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
+		8321006C24109D47005CFE29 /* WaitingRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomVC.swift; sourceTree = "<group>"; };
+		8321006E24109DA8005CFE29 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		D0F99E172B7EABB25E871479 /* Pods_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712CE4255DA06298A0DA7B02 /* Pods_Hackers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				8321004A241083C0005CFE29 /* Hackers */,
 				83210049241083C0005CFE29 /* Products */,
+				D599B562A756B813FEA2D5C2 /* Pods */,
+				E34456F84CDFC1F46004B16F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +75,35 @@
 			children = (
 				8321004B241083C0005CFE29 /* AppDelegate.swift */,
 				8321004D241083C0005CFE29 /* SceneDelegate.swift */,
-				8321004F241083C0005CFE29 /* ViewController.swift */,
 				83210051241083C1005CFE29 /* Main.storyboard */,
+				8321006E24109DA8005CFE29 /* GameVC.swift */,
+				8321006424108DCE005CFE29 /* MainVC.swift */,
+				8321006A241099CC005CFE29 /* NameVC.swift */,
+				8321006C24109D47005CFE29 /* WaitingRoomVC.swift */,
 				83210057241083C1005CFE29 /* Assets.xcassets */,
 				83210059241083C1005CFE29 /* LaunchScreen.storyboard */,
 				8321005C241083C1005CFE29 /* Info.plist */,
+				83210062241084EF005CFE29 /* GoogleService-Info.plist */,
 				83210054241083C1005CFE29 /* Hackers.xcdatamodeld */,
 			);
 			path = Hackers;
+			sourceTree = "<group>";
+		};
+		D599B562A756B813FEA2D5C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				030974A53C089D68FF65BBDE /* Pods-Hackers.debug.xcconfig */,
+				710344B5F4E79774A51D2A5F /* Pods-Hackers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E34456F84CDFC1F46004B16F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F99E172B7EABB25E871479 /* Pods_Hackers.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8321005F241083C1005CFE29 /* Build configuration list for PBXNativeTarget "Hackers" */;
 			buildPhases = (
+				41A24A98E895357AF2528D1A /* [CP] Check Pods Manifest.lock */,
 				83210044241083C0005CFE29 /* Sources */,
 				83210045241083C0005CFE29 /* Frameworks */,
 				83210046241083C0005CFE29 /* Resources */,
+				991C5FA84144403BBFB1EB6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8321005B241083C1005CFE29 /* LaunchScreen.storyboard in Resources */,
+				83210063241084EF005CFE29 /* GoogleService-Info.plist in Resources */,
 				83210058241083C1005CFE29 /* Assets.xcassets in Resources */,
 				83210053241083C1005CFE29 /* Main.storyboard in Resources */,
 			);
@@ -136,14 +175,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41A24A98E895357AF2528D1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991C5FA84144403BBFB1EB6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackers/Pods-Hackers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackers/Pods-Hackers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackers/Pods-Hackers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83210044241083C0005CFE29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83210050241083C0005CFE29 /* ViewController.swift in Sources */,
+				8321006524108DCE005CFE29 /* MainVC.swift in Sources */,
+				8321006D24109D47005CFE29 /* WaitingRoomVC.swift in Sources */,
 				83210056241083C1005CFE29 /* Hackers.xcdatamodeld in Sources */,
 				8321004C241083C0005CFE29 /* AppDelegate.swift in Sources */,
+				8321006F24109DA8005CFE29 /* GameVC.swift in Sources */,
+				8321006B241099CC005CFE29 /* NameVC.swift in Sources */,
 				8321004E241083C0005CFE29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +370,7 @@
 		};
 		83210060241083C1005CFE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030974A53C089D68FF65BBDE /* Pods-Hackers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +389,7 @@
 		};
 		83210061241083C1005CFE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710344B5F4E79774A51D2A5F /* Pods-Hackers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

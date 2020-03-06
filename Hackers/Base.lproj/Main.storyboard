@@ -30,6 +30,9 @@
                                 <state key="normal" title="Join Party">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="joinPartyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FDc-f4-v1s"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Party Code" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-cx-5fo">
                                 <rect key="frame" x="20" y="424" width="374" height="48"/>
@@ -45,6 +48,9 @@
                                 <state key="normal" title="Start a new party">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startPartyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27E-OJ-g3X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +58,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="dqV-6G-oce"/>
                     <connections>
-                        <segue destination="bxI-rh-7vJ" kind="show" id="gal-xt-tc3"/>
+                        <outlet property="joinPartyButton" destination="RyV-Yh-47x" id="wS8-Es-vhr"/>
+                        <outlet property="joinPartyTF" destination="JBy-cx-5fo" id="jRg-E9-a1C"/>
+                        <outlet property="mainLabel" destination="Zce-eX-sK1" id="1ye-Ip-RZF"/>
+                        <outlet property="startPartyButton" destination="f09-Rg-u3i" id="iMC-jl-6u4"/>
+                        <segue destination="bxI-rh-7vJ" kind="show" identifier="joinPartySegue" id="gal-xt-tc3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

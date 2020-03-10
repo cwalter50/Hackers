@@ -20,6 +20,8 @@
 		8321006D24109D47005CFE29 /* WaitingRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006C24109D47005CFE29 /* WaitingRoomVC.swift */; };
 		8321006F24109DA8005CFE29 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321006E24109DA8005CFE29 /* GameVC.swift */; };
 		832100712411F36D005CFE29 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832100702411F36D005CFE29 /* StringExtensions.swift */; };
+		83210076241442B2005CFE29 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83210075241442B2005CFE29 /* Party.swift */; };
+		8321007824144AB8005CFE29 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321007724144AB8005CFE29 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8321006C24109D47005CFE29 /* WaitingRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomVC.swift; sourceTree = "<group>"; };
 		8321006E24109DA8005CFE29 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		832100702411F36D005CFE29 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		83210075241442B2005CFE29 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		8321007724144AB8005CFE29 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D0F99E172B7EABB25E871479 /* Pods_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 				83210051241083C1005CFE29 /* Main.storyboard */,
 				8321006E24109DA8005CFE29 /* GameVC.swift */,
 				8321006424108DCE005CFE29 /* MainVC.swift */,
+				832100742414404D005CFE29 /* Model */,
 				832100702411F36D005CFE29 /* StringExtensions.swift */,
 				8321006A241099CC005CFE29 /* NameVC.swift */,
 				8321006C24109D47005CFE29 /* WaitingRoomVC.swift */,
@@ -90,6 +95,15 @@
 				83210054241083C1005CFE29 /* Hackers.xcdatamodeld */,
 			);
 			path = Hackers;
+			sourceTree = "<group>";
+		};
+		832100742414404D005CFE29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83210075241442B2005CFE29 /* Party.swift */,
+				8321007724144AB8005CFE29 /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D599B562A756B813FEA2D5C2 /* Pods */ = {
@@ -226,12 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				832100712411F36D005CFE29 /* StringExtensions.swift in Sources */,
+				83210076241442B2005CFE29 /* Party.swift in Sources */,
 				8321006524108DCE005CFE29 /* MainVC.swift in Sources */,
 				8321006D24109D47005CFE29 /* WaitingRoomVC.swift in Sources */,
 				83210056241083C1005CFE29 /* Hackers.xcdatamodeld in Sources */,
 				8321004C241083C0005CFE29 /* AppDelegate.swift in Sources */,
 				8321006F24109DA8005CFE29 /* GameVC.swift in Sources */,
 				8321006B241099CC005CFE29 /* NameVC.swift in Sources */,
+				8321007824144AB8005CFE29 /* Player.swift in Sources */,
 				8321004E241083C0005CFE29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

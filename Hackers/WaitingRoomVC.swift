@@ -19,8 +19,10 @@ class WaitingRoomVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var roomCodeLabel: UILabel!
     
-    var party: Party?
+
     
+    var party: Party?
+    var player: Player? // we need to keep track of the user's player
     var players: [Player] = [Player]()
     {
         didSet {
@@ -67,6 +69,7 @@ class WaitingRoomVC: UIViewController, UITableViewDataSource, UITableViewDelegat
                         self.players.remove(at: i)
                     }
                     self.players.append(player)
+                    theParty.players = self.players
                     
                     self.playerTableView.reloadData()
                     
@@ -79,14 +82,101 @@ class WaitingRoomVC: UIViewController, UITableViewDataSource, UITableViewDelegat
             
             
         }
-        
-        
-        
+
        
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton)
     {
+        assignRoles()
+        updatePlayerRolesInFirebase()
+        
+        if players.count >= 3
+        {
+            performSegue(withIdentifier: "startGameSegue", sender: self)
+        }
+        else
+        {
+            let alert = UIAlertController(title: "Error", message: "You need at least 3 players to play the game", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func assignRoles()
+    {
+        /*
+         assign roles...
+         1 Hacker for every 8 players
+         1 Programmer for every 8 players
+         1 forensic Detective for every 8 players
+         The rest are citizens
+         */
+        // figure out how many of each type of player is in players.
+        
+        // make a roles array to match the number of players
+        var roleList = [Role]()
+        
+        let hackers = players.count / 10 + 1
+        let programmers = players.count / 10 + 1
+        let forensicDetectives = players.count / 10 + 1
+        
+        for _ in 0..<hackers
+        {
+            roleList.append(Roles.hacker)
+        }
+        for _ in 0..<programmers
+        {
+            roleList.append(Roles.programmer)
+        }
+        for _ in 0..<forensicDetectives
+        {
+            roleList.append(Roles.forensicDetective)
+        }
+        
+        // fill the rest with citizens
+        while roleList.count < players.count
+        {
+            roleList.append(Roles.citizen)
+        }
+        roleList.shuffle()
+        
+        // match each player in players with a role from the roleList
+        for i in 0..<players.count
+        {
+            players[i].role = roleList[i]
+        }
+        
+        print("The roles of the players...")
+        for player in players
+        {
+            print("\(player.uid): \(player.name) is a \(player.role.name)")
+        }
+    }
+    
+    func updatePlayerRolesInFirebase()
+    {
+        if let theParty = party
+        {
+            for player in players
+            {
+                // write the room to firebase
+                let ref = Database.database().reference().child("rooms").child(theParty.roomCode).child("players").child(player.uid)
+                ref.setValue(player.toValues()) {
+                    err, ref in
+                    if let error = err
+                    {
+                        print(error.localizedDescription)
+                    }
+                    else
+                    {
+                        print("successfully updated player \(player.name)'s role to \(player.role.name) to the room \(theParty.roomCode)")
+                        
+                    }
+                }
+            }
+        }
         
     }
     
@@ -103,6 +193,16 @@ class WaitingRoomVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         cell.textLabel?.text = "\(indexPath.row+1): \(currentPlayer.name)"
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "startGameSegue"
+        {
+            let destVC = segue.destination as! GameVC
+            destVC.player = self.player
+            destVC.players = self.players
+            destVC.party = self.party
+        }
     }
     
     

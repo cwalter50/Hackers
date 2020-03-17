@@ -54,14 +54,10 @@ class NameVC: UIViewController {
                         }
                     }
                 }
-
-                
-                
             }
             else
             {
                 // make up a random fake name and join the party
-                
                 
             }
         }
@@ -74,6 +70,7 @@ class NameVC: UIViewController {
         {
             let destVC = segue.destination as! WaitingRoomVC
             destVC.party = party
+            destVC.player = player
         }
     }
 

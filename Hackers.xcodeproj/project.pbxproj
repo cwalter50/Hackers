@@ -22,6 +22,8 @@
 		832100712411F36D005CFE29 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832100702411F36D005CFE29 /* StringExtensions.swift */; };
 		83210076241442B2005CFE29 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83210075241442B2005CFE29 /* Party.swift */; };
 		8321007824144AB8005CFE29 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321007724144AB8005CFE29 /* Player.swift */; };
+		8321007A241E859C005CFE29 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83210079241E859C005CFE29 /* Role.swift */; };
+		8321007C241F107F005CFE29 /* RoleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321007B241F107F005CFE29 /* RoleDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		832100702411F36D005CFE29 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		83210075241442B2005CFE29 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		8321007724144AB8005CFE29 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		83210079241E859C005CFE29 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		8321007B241F107F005CFE29 /* RoleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleDetails.swift; sourceTree = "<group>"; };
 		D0F99E172B7EABB25E871479 /* Pods_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,12 +86,12 @@
 				8321004B241083C0005CFE29 /* AppDelegate.swift */,
 				8321004D241083C0005CFE29 /* SceneDelegate.swift */,
 				83210051241083C1005CFE29 /* Main.storyboard */,
-				8321006E24109DA8005CFE29 /* GameVC.swift */,
 				8321006424108DCE005CFE29 /* MainVC.swift */,
-				832100742414404D005CFE29 /* Model */,
-				832100702411F36D005CFE29 /* StringExtensions.swift */,
 				8321006A241099CC005CFE29 /* NameVC.swift */,
 				8321006C24109D47005CFE29 /* WaitingRoomVC.swift */,
+				8321006E24109DA8005CFE29 /* GameVC.swift */,
+				832100742414404D005CFE29 /* Model */,
+				832100702411F36D005CFE29 /* StringExtensions.swift */,
 				83210057241083C1005CFE29 /* Assets.xcassets */,
 				83210059241083C1005CFE29 /* LaunchScreen.storyboard */,
 				8321005C241083C1005CFE29 /* Info.plist */,
@@ -100,6 +104,8 @@
 		832100742414404D005CFE29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83210079241E859C005CFE29 /* Role.swift */,
+				8321007B241F107F005CFE29 /* RoleDetails.swift */,
 				83210075241442B2005CFE29 /* Party.swift */,
 				8321007724144AB8005CFE29 /* Player.swift */,
 			);
@@ -239,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8321007C241F107F005CFE29 /* RoleDetails.swift in Sources */,
 				832100712411F36D005CFE29 /* StringExtensions.swift in Sources */,
+				8321007A241E859C005CFE29 /* Role.swift in Sources */,
 				83210076241442B2005CFE29 /* Party.swift in Sources */,
 				8321006524108DCE005CFE29 /* MainVC.swift in Sources */,
 				8321006D24109D47005CFE29 /* WaitingRoomVC.swift in Sources */,
